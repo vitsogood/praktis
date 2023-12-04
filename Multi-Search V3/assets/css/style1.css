@@ -1,0 +1,733 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+
+
+/* Container styles */
+ .container {
+  width: 50% !important;
+} 
+
+/* Form styles */
+#searchForm {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 2px solid currentColor;
+  border-radius: 16px;
+  margin: 0 0 30px;
+  background-color: #e9e9e9;
+}
+
+input[type="search"] {
+  border: none;
+  background: none !important;
+  margin: 0;
+  padding: 16px 12px;
+  font-size: 28px;
+  color: inherit;
+  border: none !important;
+  border-radius: inherit;
+  width: 90%;
+  flex: 1;  
+}
+
+#searchBtn {
+  border: none;
+  padding-right: 1rem;
+  background-color: transparent;
+}
+
+.fa-search {
+  font-size: 24px;
+  float: right;
+  background-color: transparent;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+/* media query */
+@media (min-width: 768px) { /* You can adjust the max-width value as needed for your tablet layout */
+  .container {
+    width: 90% !important;
+  }
+  .category{
+    margin-bottom: 6rem !important;
+  }
+  /* .categoryBtn{
+    line-height: 8rem !important;
+  } */
+}
+
+/* dataTables */
+  /* Custom even-row class */
+  #dataTable .even-row {
+    background-color: #caf0f8;
+}
+
+/* Custom odd-row class */
+#dataTable .odd-row {
+    background-color: #ade8f4;
+}
+
+#dataTable .highlighted-row {
+    background-color: orange;
+}
+
+
+#dataTable {
+  border-collapse: collapse;
+  border: .1px solid whitesmoke;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Change the color and width as needed */
+}
+
+th,
+td {
+  border: .1px solid whitesmoke;
+  /* Change the color and width as needed */
+  padding: 8px;
+}
+
+#dataTable tbody tr,
+#dataTable td {
+  border: 1px solid whitesmoke !important;
+  padding: 8px !important;
+
+}
+
+/* Custom even-row class */
+#dataTable .even-row {
+  background-color: #caf0f8;
+}
+
+/* Custom odd-row class */
+#dataTable .odd-row {
+  background-color: #ade8f4;
+}
+
+#dataTable .highlighted-row {
+  background-color: orange;
+}
+
+
+/* override header font-size */
+#headerText {
+  font-size: 4rem !important;
+}
+
+/* keypad */
+                            
+ 
+#keypadButton, .refresh {
+padding: 8px 8px 0px 8px; 
+background-color:#3452b4;
+color:white;
+border-radius:16px;
+border:none;
+margin-bottom:0;
+width: 80px;
+}
+.btnLabel{
+font-size: 16px;
+}
+.refresh{
+background-color:#4caf50 !important;
+}
+/* #keypadButton {
+margin-left: 4rem !important;
+} */
+
+ 
+#keyboard ul{
+border: 3px solid #fff;
+/* background-color: pink; */
+}
+#keyboard li {  
+float: left;  
+margin: 0 0px 0px 0;  
+width: 100px;  
+height: 40px;  
+font-size: 16px;
+line-height: 40px;  
+text-align: center;  
+background: #fff;  
+border: 1px solid black;  
+
+}  
+    .capslock, .tab, .left-shift, .clearl, .switch {  
+    clear: left;  
+    }  
+        #keyboard .tab, #keyboard .enter {  
+        width: 200px;  
+        }  
+        #keyboard .capslock {  
+        width: 80px;  
+        }  
+        #keyboard .return {  
+        width: 90px;  
+        }  
+        #keyboard .left-shift{  
+        width: 70px;  
+        }  
+
+        #keyboard .switch {
+        width: 90px;
+        }
+        #keyboard .rightright-shift {  
+        width: 109px;  
+        }  
+    .lastitem {  
+    margin-right: 0;  
+    }  
+    .enter{
+    background-color: #b8e6e2;
+    }
+    
+    .del{
+    background-color: #fbecdd !important;
+    }
+    .bs{
+    background-color: #f0c243 !important;
+    }
+    .blue{
+        background-color: #cce7eb !important;
+    }
+    .grey{
+        background-color: #d8e2e3 !important;
+    }
+    .space{
+        /* width:  !important; */
+    }
+    .gap {
+        height: 10px; /* Adjust the height as needed */
+        /* width: 300px !important;
+        background-color: #a2abba !important;
+        border:none !important; */
+    }
+    .gap:hover{
+        top:0 !important;
+        left:0 !important;
+    }
+
+    .uppercase {  
+    text-transform: uppercase;  
+    }  
+    #keyboard .space {  
+    float: left;
+    width: 556px;  
+    }  
+    #keyboard .switch, #keyboard .space, #keyboard .return{
+    font-size: 16px;
+    }
+    .on {  
+    display: none;  
+    }  
+    #keyboard li:hover {  
+    position: relative;  
+    top: 1px;  
+    left: 1px;  
+    border-color: black;  
+    cursor: pointer;  
+    background-color: #e8e8e8;
+    }  
+
+    .zoom {
+        background-color: #f00; /* Adjust the background color as needed */
+        color: #fff; /* Adjust the text color as needed */
+        border: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+        display: none;
+    }
+
+/* css loader */
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/* ----- */
+/* disabling btns */
+.grayed-out {
+  background-color: #ccc; /* Gray background color */
+  pointer-events: none;  /* Disable pointer events for the button */
+}
+
+
+/* datatable */
+#tableData thead th {
+  background-color: #168aad; /* Change 'your-color' to your desired background color */
+  color: #fff; /* Change the text color to make it readable */
+}
+
+/* search button */
+.searchModal {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 1.7rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.searchModal:disabled {
+  cursor: default;
+}
+
+.searchModal:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* ----- */
+span {
+  /* font-size: 2rem; */
+  /* margin-top: -50px; */
+}
+
+/* 3D BUTTON */
+.btn3d {
+  position: relative;
+  top: -6px;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 3rem;
+  padding: -1rem;
+  /* background-color: #405cf5; */
+  border-radius: 16px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000 !important;
+  cursor: pointer;
+  height: 9rem; 
+  line-height: 3rem;
+  margin: 6px 0 0;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+	outline: medium none;
+}
+
+
+.btn3d:active,
+.btn3d.active {
+	top: 2px;
+}
+.btn3d.btn-primary {
+	/* box-shadow: 0 0 0 1px #01BEBD inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5); */
+	/* background-color: #0C82FF; */
+}
+
+.btn3d.btn-primary:active,
+.btn3d.btn-primary.active {
+	/* box-shadow: 0 0 0 1px #01BEBD inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3); */
+	/* background-color: #0C82FF; */
+}
+
+/* local */
+.btn3d#material {
+  background-color: #d8f5be;
+  border: 1px solid #93b377;
+  /* color: #2e5011; */
+}
+
+.btn3d.btn-primary#material {
+box-shadow: 0 0 0 1px #d8f5be inset, 0 0 0 2px rgba(157, 218, 159, 0.15) inset, 0 8px 0 0 #93b377, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #d8f5be;
+}
+
+.btn3d.btn-primary#material:active,
+.btn3d.btn-primary#material.active {
+box-shadow: 0 0 0 1px #d8f5be inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #d8f5be;
+}
+
+.btn3d#suply {
+  background-color: #bceae4;
+  border: 1px solid #7fccc3 !important;
+  /* color: #07594f; */
+}
+
+
+.btn3d.btn-primary#supply {
+box-shadow: 0 0 0 1px #bceae4 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #7fccc3, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #bceae4;
+}
+
+.btn3d.btn-primary#supply:active,
+.btn3d.btn-primary#supply.active {
+box-shadow: 0 0 0 1px #bceae4 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #bceae4;
+}
+
+.btn3d#accessory {
+  background-color: #deccf2;
+  border: 1px solid #c193e0 !important;
+  /* color: #3d0264; */
+
+}
+.btn3d.btn-primary#accessory {
+box-shadow: 0 0 0 1px #deccf2 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c193e0, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #deccf2;
+}
+
+.btn3d.btn-primary#accessory:active,
+.btn3d.btn-primary#accessory.active {
+box-shadow: 0 0 0 1px #deccf2 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #deccf2;
+}
+  
+.btn3d#fg {
+  background-color: #fbd2bf;
+  border: 1px solid #e7aa87 !important;
+  /* color: #6e3310; */
+
+}
+
+.btn3d.btn-primary#fg {
+box-shadow: 0 0 0 1px #fbd2bf inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #e7aa87, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #fbd2bf;
+}
+
+.btn3d.btn-primary#fg:active,
+.btn3d.btn-primary#fg.active {
+box-shadow: 0 0 0 1px #fbd2bf inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #fbd2bf;
+}
+
+
+.btn3d#draw {
+  background-color: #f8f896;
+  border: 1px solid #dcd559 !important;
+  /* color: #6d6a08; */
+}
+
+.btn3d.btn-primary#draw {
+box-shadow: 0 0 0 1px #f8f896 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #dcd559, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #f8f896;
+}
+
+.btn3d.btn-primary#draw:active,
+.btn3d.btn-primary#draw.active {
+box-shadow: 0 0 0 1px #f8f896 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #f8f896;
+}
+  
+
+.btn3d#barcode {
+  background-color: #f7dd86;
+  border: 1px solid #998856 !important;
+  /* color: #413200; */
+}
+
+
+.btn3d.btn-primary#barcode {
+box-shadow: 0 0 0 1px #f7dd86 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #998856, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #f7dd86;
+}
+
+.btn3d.btn-primary#barcode:active,
+.btn3d.btn-primary#barcode.active {
+box-shadow: 0 0 0 1px #f7dd86 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #f7dd86;
+}
+    
+
+/* cloud */
+/* video */
+.btn3d#video {
+  background-color: #c0edf7;
+  border: 1px solid #84aab1 !important;
+  /* color: #035e6f; */
+}
+.btn3d.btn-primary#video {
+box-shadow: 0 0 0 1px #c0edf7 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #84aab1, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #c0edf7;
+}
+
+.btn3d.btn-primary#video:active,
+.btn3d.btn-primary#video.active {
+box-shadow: 0 0 0 1px #c0edf7 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #c0edf7;
+}
+
+
+/* audio */
+.btn3d#audio {
+  background-color: #90e7a0;
+  border: 1px solid #68ab81 !important;
+  /* color: #29643f; */
+
+}
+.btn3d.btn-primary#audio {
+box-shadow: 0 0 0 1px #b3efd3 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #68ab81, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #b3efd3;
+}
+
+
+.btn3d.btn-primary#audio:active,
+.btn3d.btn-primary#audio.active {
+box-shadow: 0 0 0 1px #b3efd3 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #b3efd3;
+}
+  
+/* pdf */
+.btn3d#pdf {
+  background-color: #f9e183;
+  border: 1px solid #c9a369 !important;
+  /* color: #513306; */
+
+}
+.btn3d.btn-primary#pdf {
+box-shadow: 0 0 0 1px #f9e183 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c9a369, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #f9e183;
+}
+
+
+.btn3d.btn-primary#pdf:active,
+.btn3d.btn-primary#pdf.active {
+box-shadow: 0 0 0 1px #f9e183 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #f9e183;
+}
+
+/* image */
+.btn3d#image {
+  background-color: #e1a7e1;
+  border: 1px solid #ad76ad !important;
+  /* color: #480b48; */
+
+}
+.btn3d.btn-primary#image {
+box-shadow: 0 0 0 1px #e1a7e1 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #ad76ad, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #e1a7e1;
+}
+
+.btn3d.btn-primary#image:active,
+.btn3d.btn-primary#image.active {
+box-shadow: 0 0 0 1px #e1a7e1 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #e1a7e1;
+}
+
+
+/* cards */
+.btn3d#card {
+  background-color: #ffb1ae;
+  border: 1px solid #d07b78 !important;
+  /* color: #5a0300; */
+
+}
+
+.btn3d.btn-primary#card {
+box-shadow: 0 0 0 1px #ffb1ae inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #d07b78, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #ffb1ae;
+}
+
+
+.btn3d.btn-primary#card:active,
+.btn3d.btn-primary#card.active {
+box-shadow: 0 0 0 1px #ffb1ae inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #ffb1ae;
+}
+
+/* local */
+.btn3d#localSearch {
+  background-color: #9ec9ef;
+  border: 1px solid #00abd8 !important;
+  /* color: #5a0300; */
+}
+
+.btn3d.btn-primary#localSearch {
+box-shadow: 0 0 0 1px #9ec9ef inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #00abd8, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #9ec9ef;
+}
+
+
+.btn3d.btn-primary#localSearch:active,
+.btn3d.btn-primary#localSearch.active {
+box-shadow: 0 0 0 1px #9ec9ef inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #9ec9ef;
+}
+
+/* localCloud */
+.btn3d#localCloud {
+  background-color: #bdd684;
+  border: 1px solid #95ab63 !important;
+  /* color: #5a0300; */
+
+}
+
+.btn3d.btn-primary#localCloud {
+box-shadow: 0 0 0 1px #bdd684 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #95ab63, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #bdd684;
+}
+
+
+.btn3d.btn-primary#localCloud:active,
+.btn3d.btn-primary#localCloud.active {
+box-shadow: 0 0 0 1px #bdd684 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #bdd684;
+}
+
+/* main buttons -- keypad, switch, reset */
+.btn3d#keypadButton {
+  background-color: #bdd684;
+  border: 1px solid #95ab63 !important;
+  /* color: #5a0300; */
+
+}
+
+.btn3d.btn-primary#keypadButton {
+box-shadow: 0 0 0 1px #bdd684 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #95ab63, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+background-color: #bdd684;
+}
+
+
+.btn3d.btn-primary#keypadButton:active,
+.btn3d.btn-primary#keypadButton.active {
+box-shadow: 0 0 0 1px #bdd684 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background-color: #bdd684;
+}
+
+
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Styles for the modal content */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50% !important;
+  border-radius: 6rem;
+}
+
+/* Styles for the close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* multiSearch current styles */
+
+
+
+
+
+
+
+
+/* 12/10/2023 */
